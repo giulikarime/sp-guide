@@ -1,0 +1,32 @@
+.rotSection{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgMap{
+    width: 600px;
+}
+
+path {
+    fill: #d1d5db;
+    stroke: #ffffff;
+    stroke-width: 1.5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+path:hover {
+    fill: #9ca3af;
+    transform: scale(1.01);
+}
+path.active {
+    fill: #3b82f6;
+    stroke: #1e40af;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
+}
+text {
+    font-family: sans-serif;
+    font-weight: bold;
+    fill: #374151;
+    pointer-events: none;
+    font-size: 14px;
+}

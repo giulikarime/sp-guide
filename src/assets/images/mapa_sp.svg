@@ -1,0 +1,18 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+
+
+  <path class="region" id="norte" d="M350,250 L420,200 L500,220 L530,280 L480,350 L380,350 L320,310 Z" />
+  <text x="400" y="280">NORTE</text>
+
+  <path class="region" id="leste" d="M480,350 L580,330 L700,350 L750,450 L650,520 L500,500 L450,420 Z" />
+  <text x="580" y="430">LESTE</text>
+
+  <path class="region" id="centro" d="M380,350 L480,350 L450,420 L400,450 L350,410 Z" />
+  <text x="390" y="395">CENTRO</text>
+
+  <path class="region" id="oeste" d="M320,310 L380,350 L350,410 L280,450 L200,420 L180,350 Z" />
+  <text x="250" y="370">OESTE</text>
+
+  <path class="region" id="sul" d="M280,450 L400,450 L500,500 L480,600 L420,750 L380,950 L300,950 L250,800 L280,650 L220,550 Z" />
+  <text x="330" y="650">SUL</text>
+</svg>
