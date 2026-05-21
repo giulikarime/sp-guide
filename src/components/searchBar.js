@@ -36,11 +36,6 @@ function fillList(items) {
     const list = document.getElementById('ulLocates');
     list.innerHTML = "";
 
-    if (items.length === 0) {
-        list.innerHTML = '<li class="no-results">Procurando alguma coisa especial?</li>';
-        return;
-    }
-
     items.forEach((item) => {
         const li = document.createElement('li');
         li.innerHTML = `

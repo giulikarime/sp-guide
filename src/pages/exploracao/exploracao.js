@@ -1,5 +1,4 @@
 let lugares = [];
-const loadData = false;
 
 export const handleLoad = (e,svgRaw)=>{
     if(document.querySelector('svg')) return;

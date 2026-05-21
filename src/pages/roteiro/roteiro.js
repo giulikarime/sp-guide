@@ -13,7 +13,7 @@ export function loadItinerary(){
         return;
     }
 
-    roteiro.forEach((item,index)=>{
+    roteiro.forEach((item)=>{
         const li = document.createElement('li');
         li.innerHTML = `
         <div>
