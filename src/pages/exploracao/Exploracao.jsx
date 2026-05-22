@@ -6,7 +6,6 @@ import ListLocates from "../../components/ListLocates.jsx";
 import {handleLoad} from "./exploracao.js";
 import './exploracao.css'
 import { searchItem } from "../../components/searchBar.js";
-import Filter from "../../components/Filter.jsx";
 
 
 function Exploracao(){
@@ -30,7 +29,25 @@ function Exploracao(){
                 <input onChange={searchItem} type="search" name="" id="searchBar"/>
                 <label htmlFor="searchBar">Pesquisa</label>
             </div>
-            <Filter/>
+            <div>
+                <input type="checkbox" id='checkPago'    onChange={searchItem}/>
+                <label htmlFor="checkPago">Pago</label>
+
+                <input type="checkbox" id='checkGratuito' onChange={searchItem}/>
+                <label htmlFor="checkGratuito">Gratuito</label>
+            </div>
+            <div>
+                <select onChange={searchItem} name="categorias" id="categorias">
+                    <option value="">Selecione uma opção</option>
+                    <option value="Museu">Museu</option>
+                    <option value="Parque">Parque</option>
+                    <option value="Cultura">Cultura</option>
+                    <option value="Gastronomia">Gastronomia</option>
+                    <option value="Histórico">Histórico</option>
+                    <option value="Centro Cultural">Centro Cultural</option>
+                    <option value="Lazer">Lazer</option>
+                </select>
+            </div>
             <ListLocates />
         </section>
     );
