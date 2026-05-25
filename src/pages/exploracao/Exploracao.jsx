@@ -11,9 +11,6 @@ import { searchItem } from "../../components/searchBar.js";
 function Exploracao(){
     const imgRef = useRef(null);
 
-    useEffect(() => {
-
-    }, []);
 
     useEffect(() => {
         const img = imgRef.current;

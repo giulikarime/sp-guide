@@ -46,6 +46,7 @@ const fillList = (info) =>{
             <h1>${item.nome}</h1>
             <button>Adicionar ao roteiro</button>
         </div>
+        <img id="imgPrincipal" src="./src/assets/images/${item.imagem_principal}" alt="${item.nome}" loading="lazy" />
         <p>${item.zona} - ${item.categoria}</p>
         <p>${item.endereco}</p>
         <p>${item.preco}</p>

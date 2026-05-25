@@ -21,7 +21,7 @@ export async function searchItem() {
             .map(t => t.trim())
             .filter(t => t.length > 0)
             .some(term =>
-                [item.nome, item.categoria, item.zona, item.endereco]
+                [item.nome, item.categoria, item.zona, item.endereco, item.acessibilidade ? "Acessível" : "Não Acessível"]
                     .some(campo =>
                         String(campo ?? '').toLowerCase().includes(term)
                     )
